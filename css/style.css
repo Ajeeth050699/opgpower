@@ -1634,7 +1634,7 @@ button {
 }
 
 .button-secondary-2.button-outline::before {
-	border-color: #73cca1;
+	border-color: #FFBE87;
 }
 
 .button-secondary-2.button-outline:hover::before, .button-secondary-2.button-outline:active::before {
@@ -1673,7 +1673,7 @@ button {
 
 .button-default-outline-2:hover, .button-default-outline-2:active {
 	color: #ffffff;
-	background-color: #FFBE87;
+	background-color: #73cca1;
 	border-color: #FFBE87;
 }
 
@@ -3159,7 +3159,27 @@ p + .quote-classic {
 .steel-color{
 	color :#FFBE87;
 }
-.market-flex{
+
+.market-flex {
+	display: flex;
+	
+  }
+  
+  .market-flex > div {
+	flex: 1;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+  }
+  
+  .market-flex > div > div {
+	margin-bottom: 10px;
+	background-color: #FFBE87;
+	border-radius: 5px;
+	padding: 10px 15px;
+  }
+  
+/* .market-flex{
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-evenly;
@@ -3169,16 +3189,22 @@ p + .quote-classic {
 		flex-wrap: wrap;
 		margin-top: 20px;
 		
+		
 }
-.steel-point{
-	display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Adjust the gap as needed */
-}
+.market-flex> div {
+	padding: 5px;
+	border: 1px solid #FFBE87;
+} */
 
+.steel-point {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	
+  }
 .steel-point > span {
   padding: 5px;
-  border: 1px solid #000;
+  border: 1px solid #FFBE87;
 }
 
 
@@ -3194,6 +3220,10 @@ p + .quote-classic {
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.07);
 	transition: all .4s ease;
 	z-index: -1;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
 
 .quote-tara-figure {
@@ -4257,7 +4287,7 @@ hr + .footer-social-list {
 }
 
 .services-terri-title a:hover {
-	color: #9fff45;
+	color: #FFBE87;
 }
 
 * + .services-terri-title {
@@ -4288,7 +4318,7 @@ hr + .footer-social-list {
 	}
 	.desktop .services-terri:hover .services-terri-icon {
 		color: #151515;
-		background: #98bf44;
+		background: #FFBE87;
 	}
 }
 

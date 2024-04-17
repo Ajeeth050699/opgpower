@@ -7529,6 +7529,8 @@ html.tablet .ui-to-top {
 	text-decoration: none;
 	display: block;
   font-size: 15px;
+  text-transform: uppercase;
+
   }
 
 .rd-navbar-static .rd-nav-item.focus .rd-nav-link,

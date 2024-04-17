@@ -4199,10 +4199,17 @@ hr + .footer-social-list {
   vertical-align: middle;
 }
 
+.product-title1 {
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  text-transform: none;
+}
 .product-title {
   font-weight: 400;
   letter-spacing: 0.025em;
   text-transform: none;
+  margin-bottom: 20px;
+  color: #ffbe87;
 }
 
 .product-price {

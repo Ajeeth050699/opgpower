@@ -11,6 +11,31 @@
     <meta charset="utf-8" />
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
     <!-- Stylesheets-->
+    <style>
+  @keyframes clickable {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clickable-animation {
+  animation: clickable 2s infinite;
+}
+
+.clickable-animation:hover {
+  animation-play-state: paused;
+}
+
+
+/* Add more nth-child rules as needed */
+
+</style>    
     <link
       rel="stylesheet"
       type="text/css"
@@ -378,49 +403,46 @@
             class="tabs-custom row row-50 justify-content-center flex-lg-row-reverse text-center text-md-left"
             id="tabs-4"
           >
-            <div class="col-lg-4 col-xl-3">
-              <h5 class="text-spacing-200 text-capitalize">
-                10+ years of experience
-              </h5>
-              <ul class="nav list-category list-category-down-md-inline-block">
-                <li
-                  class="list-category-item wow fadeInRight"
-                  role="presentation"
-                  data-wow-delay="0s"
-                >
-                  <a class="active" href="#tabs-4-1" data-toggle="tab"
-                    >About us</a
-                  >
-                </li>
-                <li
-                  class="list-category-item wow fadeInRight"
-                  role="presentation"
-                  data-wow-delay=".1s"
-                >
-                  <a href="#tabs-4-2" data-toggle="tab">Our Mission</a>
-                </li>
-                <li
-                  class="list-category-item wow fadeInRight"
-                  role="presentation"
-                  data-wow-delay=".2s"
-                >
-                  <a href="#tabs-4-3" data-toggle="tab">Our Goals</a>
-                </li>
-                <li
-                  class="list-category-item wow fadeInRight"
-                  role="presentation"
-                  data-wow-delay=".3s"
-                >
-                  <a href="#tabs-4-4" data-toggle="tab">Our Values</a>
-                </li>
-              </ul>
-              <a
-              class="button button-lg button-secondary button-winona wow fadeInRight"                 
-              
-                href="contacts.html"
-                >Contact us</a
+          <div class="col-lg-4 col-xl-3">
+            <h5 class="text-spacing-200 text-capitalize">
+              10+ years of experience
+            </h5>
+            <ul class="nav list-category list-category-down-md-inline-block">
+              <li
+                class="list-category-item wow fadeInRight"
+                role="presentation"
+                data-wow-delay="0s"
               >
-            </div>
+                <a class="active clickable-animation" href="#tabs-4-1" data-toggle="tab">About us</a>
+              </li>
+              <li
+                class="list-category-item wow fadeInRight"
+                role="presentation"
+                data-wow-delay=".1s"
+              >
+                <a class="clickable-animation" href="#tabs-4-2" data-toggle="tab">Our Mission</a>
+              </li>
+              <li
+                class="list-category-item wow fadeInRight"
+                role="presentation"
+                data-wow-delay=".2s"
+              >
+                <a class="clickable-animation" href="#tabs-4-3" data-toggle="tab">Our Goals</a>
+              </li>
+              <li
+                class="list-category-item wow fadeInRight"
+                role="presentation"
+                data-wow-delay=".3s"
+              >
+                <a class="clickable-animation" href="#tabs-4-4" data-toggle="tab">Our Values</a>
+              </li>
+            </ul>
+            <a class="button button-lg button-secondary button-winona wow fadeInRight " href="contacts.html">Contact us</a>
+          </div>
+          
+          
+          
+          
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">

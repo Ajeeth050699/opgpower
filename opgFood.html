@@ -11,10 +11,36 @@
     <meta charset="utf-8" />
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
     <!-- Stylesheets-->
-   
+    <script>
+      $(document).ready(function(){
+        // Parallax scrolling effect
+        $(window).scroll(function(){
+          var scrollPosition = $(this).scrollTop();
+          $('.parallax-section').css({
+            'background-position-y' : -(scrollPosition/2) + 'px' // Adjust scrolling speed as needed
+          });
+        });
+      });
+    </script>
     <style>
-     
-
+  
+      /* Custom styles for parallax effect */
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px; /* Adjust height as needed */
+        padding-top: 100px;
+      }
+  
+      .parallax-content {
+        background-color: rgba(255, 255, 255, 0.7); /* Add semi-transparent background for better readability */
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      }
+    
      .parallax-bg {
       
       background-size: cover;
@@ -685,7 +711,7 @@
         </div>
       </section> -->
 
-      <div class="parallax-bg" style="background-image: url('images/food-banner.jpg');">
+      <div class="parallax-bg" style="background-image: url('images/ourVision.jpg');">
         <div class="container-parallax">
           <div class="text-center">
             <h4 style="text-align: center">
@@ -817,7 +843,7 @@
       </section>
     <br/>
     <br/>
-      
+   
       <!-- Quality & Research section -->
       <section class="section bg-default">
         <div class="container">
@@ -869,14 +895,31 @@
         </div>
       </section>
     
-      
+      <section class="parallax-section" style="background-image: url('images/marketAndResearch.jpg');">
+        <div class="container parallax-content">
+          <h4>Market <span style="color: #FF8C00
+            ;">& Networking</span></h4>
+          <br/>
+          <p>
+            Salem Food Products Ltd has an extreme sales network within the
+            Country, to reach our 100% quality products to the end consumer.
+            The Company also performs the distribution and marketing network
+            to reach all the international wholesale and retail buyers. Our
+            distribution network is supported by an extensive team of
+            marketing personnel all over Tamilnadu, Kerala, Karnataka in India
+            and we also extend our business to various export markets in Gulf,
+            Africa, and South East Asia.
+          </p>
+        </div>
+      </section>
       <!-- Market & Networking section -->
-      <section class="section bg-default">
+      <!-- <section class="section bg-default">
         <div class="container">
           <div>
-            <h4>Market <span style="color: #FF8C00
-;">& Networking</span></h4>
+           
             <br />
+            <img  src="images/marketAndResearch.jpg"/>
+<br/>
             <p>
               Salem Food Products Ltd has an extreme sales network within the
               Country, to reach our 100% quality products to the end consumer.
@@ -889,7 +932,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
     <br/>
       
       <!-- Market section -->

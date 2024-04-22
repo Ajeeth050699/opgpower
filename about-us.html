@@ -33,6 +33,34 @@
     float: none;
   }
 }
+@keyframes button-press {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+
+.list-category-item a,
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.list-category-item a:hover,
+.button:hover {
+  background-color: #ffaa00;
+  color: #fff;
+}
+
+.list-category-item a:active,
+.button:active {
+  animation: button-press 0.1s ease;
+}
 
 
 
@@ -154,7 +182,7 @@
                   </div>
                 </div>
                 <div class="rd-navbar-right rd-navbar-nav-wrap">
-                  <div class="rd-navbar-aside">
+                  <!-- <div class="rd-navbar-aside">
                     <ul class="rd-navbar-contacts-2">
                       <li>
                         <div class="unit unit-spacing-xs">
@@ -185,7 +213,7 @@
                       <li><a class="icon mdi mdi-instagram" href="#"></a></li>
                       <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
                     </ul>
-                  </div>
+                  </div> -->
                   <div class="rd-navbar-main">
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
@@ -215,6 +243,7 @@
                   data-multitoggle=".rd-navbar-inner"
                   data-multitoggle-blur=".rd-navbar-wrap"
                   data-multitoggle-isolate="data-multitoggle-isolate"
+                  style="margin-bottom: 20px ;"
                 >
                   <div class="project-hamburger">
                     <span class="project-hamburger-arrow"></span
@@ -406,26 +435,26 @@
             class="tabs-custom row row-50 justify-content-center flex-lg-row-reverse text-center text-md-left"
             id="tabs-4"
           >
-          <!-- <div class="col-lg-4 col-xl-3">
+          <div class="col-lg-4 col-xl-3">
             <h5 class="text-spacing-100 text-capitalize">
              <span  style="color: #FF8C00;"> Try our Tabs</span> , Unlock the Power of Our Tabbed Insights
             </h5>
             <ul class="nav list-category list-category-down-md-inline-block">
               <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s">
-                <a class="active pulse-animation" href="#tabs-4-1" data-toggle="tab" style="padding-left: 20px; font-weight: 600;">About us</a>
+                <a class="active pulse-animation" href="#tabs-4-1" data-toggle="tab" style="padding-left: 10px; font-weight: 600;">About us</a>
               </li>
               <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s" style="margin-top: 20px;">
-                <a class="pulse-animation" href="#tabs-4-2" data-toggle="tab" style="padding-left: 20px; font-weight: 600;">Our Mission</a>
+                <a class="pulse-animation" href="#tabs-4-2" data-toggle="tab" style="padding-left: 10px; font-weight: 600;">Our Mission</a>
               </li>
               <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s" style="margin-top: 20px;">
-                <a class="pulse-animation" href="#tabs-4-3" data-toggle="tab" style="padding-left: 20px; font-weight: 600;">Our Goals</a>
+                <a class="pulse-animation" href="#tabs-4-3" data-toggle="tab" style="padding-left: 10px; font-weight: 600;">Our Goals</a>
               </li>
               <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".3s" style="margin-top: 20px;">
-                <a class="pulse-animation" href="#tabs-4-4" data-toggle="tab" style="padding-left: 20px; font-weight: 600;">Our Values</a>
+                <a class="pulse-animation" href="#tabs-4-4" data-toggle="tab" style="padding-left: 10px; font-weight: 600;">Our Values</a>
               </li>
             </ul>
             <a class="button button-lg button-secondary button-winona wow fadeInRight pulse-animation" href="contacts.html">Contact us</a>
-          </div> -->
+          </div>
           
           
           
@@ -434,10 +463,10 @@
             <div class="col-lg-8 col-xl-9">
             
               <div class="tab-content tab-content-1">
-                <h4>a few words <span style="color: #FF8C00;">about us</span></h4>
+                <h4>Our <span style="color: #FF8C00;">Vision</span></h4>
                 <br/>
 
-                <div class="tab-pane-1 fade show active" style="display: flex;" >
+                <div class="tab-pane-1 fade show active"  style="display: flex;" >
                   <img src="images/industrial-workers-standing-roof-factory-with-smoke-smog-engineer-technician-watching-team-workers-high-steel-platform-ai-generated.jpg" alt="" style="float: left; height: 300px; width: 350px; margin-right: 20px; border-radius: 15%;">
                   <div>
                       <p>

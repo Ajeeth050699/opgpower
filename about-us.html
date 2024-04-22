@@ -12,52 +12,26 @@
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
     <!-- Stylesheets-->
     <style>
-  /* @keyframes clickable {
-  0% {
-    transform: scale(1);
+ .image-left,
+.content-right {
+  float: left;
+  width: 50%;
+}
+
+.image-right,
+.content-left {
+  float: right;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .image-left,
+  .image-right,
+  .content-left,
+  .content-right {
+    width: 100%;
+    float: none;
   }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.clickable-animation {
-  animation: clickable 2s infinite;
-}
-
-.clickable-animation:hover {
-  animation-play-state: paused;
-} */
-@keyframes button-press {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(2px); }
-  100% { transform: translateY(0); }
-}
-
-.list-category-item a,
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffcc00;
-  color: #333;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.list-category-item a:hover,
-.button:hover {
-  background-color: #ffaa00;
-  color: #fff;
-}
-
-.list-category-item a:active,
-.button:active {
-  animation: button-press 0.1s ease;
 }
 
 
@@ -432,7 +406,7 @@
             class="tabs-custom row row-50 justify-content-center flex-lg-row-reverse text-center text-md-left"
             id="tabs-4"
           >
-          <div class="col-lg-4 col-xl-3">
+          <!-- <div class="col-lg-4 col-xl-3">
             <h5 class="text-spacing-100 text-capitalize">
              <span  style="color: #FF8C00;"> Try our Tabs</span> , Unlock the Power of Our Tabbed Insights
             </h5>
@@ -451,121 +425,120 @@
               </li>
             </ul>
             <a class="button button-lg button-secondary button-winona wow fadeInRight pulse-animation" href="contacts.html">Contact us</a>
-          </div>
+          </div> -->
           
           
           
           
 
             <div class="col-lg-8 col-xl-9">
-              <!-- Tab panes-->
+            
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
-                  <h4>a few words <span style="color: #FF8C00
-;">about us</span></h4>
-                  <p>
-                    OPG Group of Industries, founded by Late Shri Om Prakash
-                    Gupta, is one of the premier business houses of Southern
-                    India for the past five decades. The Group is at present
-                    lead by Shri. Ravi Gupta, its chairman ably assisted his son
-                    Shri. Alok Gupta. Though the group started from Tamil Nadu
-                    today it has its footprints all over India. Our Group’s
-                    heritage and vast experience has given it an excellent
-                    understanding and knowledge of India’s business landscape.
-                    In its five decade of existence, the Group’s business
-                    interests have captured varied industries such as Iron &
-                    Steel, Power, Foods and Logistics. OPG Group excels in the
-                    production and manufacturing of Steel and Steel Products in
-                    South India. The group has been setting up mini plant and
-                    Rolling Mills since 1981. And now it has Furnace Units.
-                    Sponge Iron Plant and Rolling Mill Division in its Steer
-                    Units Portfolio. The Group’s steel products are branded
-                    under OPG and are very well established and preferred brand
-                    in the market for their Quality, Price and Delivery.
-                  </p>
-                  <p>
-                    The Group set up the first fully automated Flour Mill in the
-                    year 1962. Being the only manufacturer Tamil Nadu today it
-                    has its footprints all over India. Our products are
-                    considered to be superior in Quality and hence they bank a
-                    good reputation in the market, being price setters in
-                    respective categories. The Group has been setting up Wind
-                    Mills from 1994 & Logistic warehousing and Container Freight
-                    Terminals since 1990. The group started Coal and Gas based
-                    Thermal Power Plants since 2004. One of the Groups companies
-                    OPG Power Ventures PLC is listed in London. The Group also
-                    belives in serving the Community by being Promoters and
-                    Trustees of Om Prakash Medical Research Trust, Maharaja
-                    Agrasen Hospital in the medical field, and Sri Vidya Mandir
-                    in Salem which have 5 School with 7000 Students.
-                  </p>
-                  <img
-                    src="images/industrial-workers-standing-roof-factory-with-smoke-smog-engineer-technician-watching-team-workers-high-steel-platform-ai-generated.jpg"
-                    alt=""
-                    width="835"
-                    height="418"
-                  />
-                </div>
-                <div class="tab-pane fade" id="tabs-4-2">
+                <h4>a few words <span style="color: #FF8C00;">about us</span></h4>
+                <br/>
+
+                <div class="tab-pane-1 fade show active" style="display: flex;" >
+                  <img src="images/industrial-workers-standing-roof-factory-with-smoke-smog-engineer-technician-watching-team-workers-high-steel-platform-ai-generated.jpg" alt="" style="float: left; height: 300px; width: 350px; margin-right: 20px;">
+                  <div>
+                      <p>
+                          OPG Group of Industries, founded by Late Shri Om Prakash Gupta, is one of the premier business houses of Southern India for the past five decades. The Group is at present lead by Shri. Ravi Gupta, its chairman ably assisted his son Shri. Alok Gupta. Though the group started from Tamil Nadu today it has its footprints all over India. Our Group’s heritage and vast experience has given it an excellent understanding and knowledge of India’s business landscape. In its five decade of existence, the Group’s business interests have captured varied industries such as Iron & Steel, Power, Foods and Logistics. OPG Group excels in the production and manufacturing of Steel and Steel Products in South India. The group has been setting up mini plant and Rolling Mills since 1981. And now it has Furnace Units. Sponge Iron Plant and Rolling Mill Division in its Steer Units Portfolio. The Group’s steel products are branded under OPG and are very well established and preferred brand in the market for their Quality, Price and Delivery.
+                      </p>
+                    
+                  </div>
+              </div>
+              
+                <br/>
+                <h4>Our<span style="color: #FF8C00
+                  ; margin-left: 10px;">Mission</span></h4>
+                  <br/>
+                <div class="tab-pane-1 fade show active" style="display: flex;" >
+                 
+                  <div>
+                    <p>
+                      Lotus advenas ducunt ad gemna. Ubi est domesticus domina?
+                      Heu, barbatus mens! Cum elogium favere, omnes lubaes
+                      tractare talis, barbatus adiuratores. Mirabilis hydras
+                      ducunt ad danista. Dominas sunt accentors de germanus
+                      cacula. Amicitias prarere in alta muta! Ecce, bubo! Nunquam
+                      promissio verpa. Talis, primus fugas recte consumere de
+                      audax, festus indictio. Nunquam quaestio scutum. Valebats
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia
+                      deserunt mollit anim id est laborum.
+                    </p>
+                    
+                  </div>
+                  <img  src="images/office-workers-holding-cog-wheel-as-unity-teamwork-corporate-workplace-concept-diverse-colleague-business-people-showing-symbol-visionary-system-mechanism-business.jpg"
+                  alt="" style="float: right; height: 300px; width: 350px; margin-right: 20px;  margin-top: -2px;">
+              </div>
+                
+                  <br/>
                   <h4>Our<span style="color: #FF8C00
-; margin-left: 10px;">Mission</span></h4>
-                  <p>
-                    Lotus advenas ducunt ad gemna. Ubi est domesticus domina?
-                    Heu, barbatus mens! Cum elogium favere, omnes lubaes
-                    tractare talis, barbatus adiuratores. Mirabilis hydras
-                    ducunt ad danista. Dominas sunt accentors de germanus
-                    cacula. Amicitias prarere in alta muta! Ecce, bubo! Nunquam
-                    promissio verpa. Talis, primus fugas recte consumere de
-                    audax, festus indictio. Nunquam quaestio scutum. Valebats
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                  <img
-                    src="images/office-workers-holding-cog-wheel-as-unity-teamwork-corporate-workplace-concept-diverse-colleague-business-people-showing-symbol-visionary-system-mechanism-business.jpg"
-                    alt=""
-                    width="835"
-                    height="418"
-                  />
+                    ; margin-left: 10px;">Goals</span></h4>
+                  <br/>
+
+                  <div class="tab-pane-1 fade show active" style="display: flex;" >
+                    <img  src="images/science-in-hd-7mShG_fAHsw-1536x1152.jpg"
+                    alt="" style="float: left; height: 300px; width: 350px; margin-right: 20px;">
+                    <div>
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                        enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        aut fugit, sed quia consequuntur magni dolores eos qui
+                        ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur.
+                      </p>
+                      <p>
+                        Lotus advenas ducunt ad gemna. Ubi est domesticus domina?
+                        Heu, barbatus mens! Cum elogium favere, omnes lubaes
+                        tractare talis, barbatus adiuratores. Mirabilis hydras
+                        ducunt ad danista. Dominas sunt accentors de germanus
+                        cacula. Amicitias prarere in alta muta! Ecce, bubo! Nunquam
+                        promissio verpa. Talis, primus fugas recte consumere de
+                        audax, festus indictio. Nunquam quaestio scutum. Valebats
+                      </p>
+                       
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3">
-                  <h4>Our<span style="color: #FF8C00
-; margin-left: 10px;">Goals</span></h4>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                    qui dolorem ipsum quia dolor sit amet, consectetur.
-                  </p>
-                  <p>
-                    Lotus advenas ducunt ad gemna. Ubi est domesticus domina?
-                    Heu, barbatus mens! Cum elogium favere, omnes lubaes
-                    tractare talis, barbatus adiuratores. Mirabilis hydras
-                    ducunt ad danista. Dominas sunt accentors de germanus
-                    cacula. Amicitias prarere in alta muta! Ecce, bubo! Nunquam
-                    promissio verpa. Talis, primus fugas recte consumere de
-                    audax, festus indictio. Nunquam quaestio scutum. Valebats
-                  </p>
-                  <img
-                    src="images/science-in-hd-7mShG_fAHsw-1536x1152.jpg"
-                    alt=""
-                    width="835"
-                    height="418"
-                  />
-                </div>
-                <div class="tab-pane fade" id="tabs-4-4">
-                  <h4>Our <span style="color: #FF8C00
+                 
+                </br>
+                <h4>Our <span style="color: #FF8C00
+                  ;"> Values </span></h4>
+                  <br/>
+
+                <div class="tab-pane-1 fade show active" style="display: flex;" >
+                 
+                  <div>
+                    <p>
+                      Albus, dexter particulas grauiter consumere de ferox,
+                      bi-color abactus. Impositios studere, tanquam mirabilis
+                      hippotoxota. Cur torus manducare? Pol, vox! Cum barcas
+                      nocere, omnes specieses contactus
+                    </p>
+                    <p>
+                      Lotus advenas ducunt ad gemna. Ubi est domesticus domina?
+                      Heu, barbatus mens! Cum elogium favere, omnes lubaes
+                      tractare talis, barbatus adiuratores. Mirabilis hydras
+                      ducunt ad danista. Dominas sunt accentors de germanus
+                      cacula. Amicitias prarere in alta muta! Ecce, bubo! Nunquam
+                      promissio verpa. Talis, primus fugas recte consumere de
+                      audax, festus indictio. Nunquam quaestio scutum. Valebats
+                    </p>
+                  </div>
+                  <img  src="images/6595.jpg"
+                  alt="" style="float: right; height: 300px; width: 350px; margin-top: -2px;">
+              </div>
+                  <!-- <h4>Our <span style="color: #FF8C00
 ;"> Values </span></h4>
                   <p>
                     Albus, dexter particulas grauiter consumere de ferox,
@@ -587,8 +560,8 @@
                     alt=""
                     width="835"
                     height="418"
-                  />
-                </div>
+                  /> -->
+               
               </div>
             </div>
           </div>

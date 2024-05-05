@@ -320,6 +320,21 @@ h6,
   letter-spacing: 0.2em;
   color: #777777;
 }
+/* Sticky positioning for the tabs */
+/* Sticky positioning for the tabs */
+.col-lg-4 {
+  position: sticky;
+  top: 0;
+}
+
+/* Scrollable area for the left side content */
+.col-lg-8 {
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust as needed */
+  /* overflow: hidden; */
+}
+
+
 
 small,
 .small {

@@ -65,7 +65,17 @@
         height: 600px; /* Adjust height as needed */
         padding-top: 100px;
       }
-
+      .parallax-bg {
+      background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        text-align: center;
+    }
       .parallax-content-1 {
         background-color: rgba(
           255,
@@ -693,7 +703,7 @@
     </section> -->
     
       
-    <section class="primary-overlay section parallax-container" style="background-image: url('images/home-why.jpg'); background-size: cover;">
+    <section   class="parallax-bg" style="background-image: url('images/home-why.jpg'); background-size: cover;">
       <div class="parallax-content section-xl context-dark text-md-left" style="height: 694px">
         <div class="container">
           <div class="row align-items-center justify-content-end"> <!-- Added align-items-center class to center content vertically -->

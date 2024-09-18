@@ -9435,13 +9435,13 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
   position: absolute;
   right: 4px;
-  bottom: 16px;
+  bottom: 92px;
 }
 
 @media (min-width: 1200px) {
-  .rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
+  /* .rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
     bottom: 26px;
-  }
+  } */
 }
 
 .rd-navbar-modern.rd-navbar-fixed .rd-navbar-aside {

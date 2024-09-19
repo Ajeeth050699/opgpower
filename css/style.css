@@ -3996,7 +3996,8 @@ p+.quote-classic {
 * Footers
 */
 .footer-modern {
-  background: #FF8C00;
+  /* background: #FF8C00; */
+  background: #000000;
 }
 
 .footer-modern>*+* {
@@ -9256,7 +9257,8 @@ html.rd-navbar-fixed-linked .page {
   right: 0;
   bottom: 0;
   width: 100vw;
-  background: #FF8C00;
+  border: 5px solid #FF8C00;
+  background: rgba(255, 140, 0, 0.2);
   transform: skewX(16deg);
   transform-origin: 50% 100%;
   will-change: transform;
@@ -9435,7 +9437,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
   position: absolute;
   right: 4px;
-  bottom: 92px;
+  bottom: 55px;
 }
 
 @media (min-width: 1200px) {
